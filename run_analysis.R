@@ -53,5 +53,8 @@ meansAndStdevs <- allData[,grep("mean\\(\\)|std\\(\\)|activity|subject",colnames
 #reorder the data frame so that "subject" and "label" are the first two rows
 meansAndStdevs <- meansAndStdevs[,c(length(meansAndStdevs),(length(meansAndStdevs)-1),1:(length(meansAndStdevs)-2))]
 
+#make a data frame with computed averages by subject and activity
 averagesByActivityAndSubject <- ddply(meansAndStdevs,.(subject,activity),numcolwise(mean))
+
+averagesByActivityAndSubject
 
