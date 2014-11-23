@@ -4,7 +4,7 @@
 
 Overall, this script loads and combines the training and test set data generating a new data frame containing only the means and standard deviations of measurements. This new data frame also integrates descriptive activity names (e.g. WALKING), descriptive column names (e.g. tBodyAcc-mean()-X), and subject IDs as additional columns. Using the means and standard deviations extracted from the original data sets, a new tidy dataset is generated containing the average of each variable for each activity and each subject. A detailed description of the processing is below.
 
-**A codebook describing the feature list (column names) can be found at http://**
+**A codebook describing the feature list (column names) can be found at [here](https://github.com/jgable2885/tidyDataProject/blob/master/averagesBycodebook.md)**
 
 ####Description of data processing:
 If not already present, data are downloaded and unzipped into the working diretory, generating a new folder "UCI HAR Dataset".
