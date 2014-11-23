@@ -1,9 +1,8 @@
 #Codebook for *run_analysis.R* output using the UCI HAR dataset version 1.0
 
-####The following was adapted from [features_info.txt](https://github.com/jgable2885/tidyDataProject/blob/master/features_info.txt) provided with the original UCI HAR dataset
+####The following was adapted from [features_info.txt](https://github.com/jgable2885/tidyDataProject/blob/master/features_info.txt) provided with the original UCI HAR dataset. Direct quotes are indicated by italics.
 
 *Feature Selection*
-=================
 
 *The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.*
 
