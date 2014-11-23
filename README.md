@@ -19,7 +19,7 @@ For each dataset (training and test sets) the following is carried out:
 
 At the end of this process the script has produced two data frames containing the test set and training set data with new columns for activity labels and subjects.
 
-These two data frames are combined using the row bind command. Numbers in the `Label` column are replaced with descriptive names from the *activity_labels.txt* file. Grep is used to extract only those columns which have names containing `mean()` or `std()` in addition to the *activity* and *subject* columns. The *activity* and *subject* columns are moved to the leftmost positions of the data frame for ease of reading.
+These two data frames are combined using the row bind command. Numbers in the *activity* column are replaced with descriptive names from the *activity_labels.txt* file. Grep is used to extract only those columns which have names containing "mean()" or "std()" in addition to the *activity* and *subject* columns (mean frequencies were omitted as they are not means of true measurements). The *activity* and *subject* columns are moved to the leftmost positions of the data frame for ease of reading.
 
 Using `ddply()` means are taken by *subject* and *activity* using the `numcolwise(mean)` function from *plyr* as the `.fun` parameter in `ddply()`.
 
