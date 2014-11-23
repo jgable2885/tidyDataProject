@@ -10,6 +10,7 @@ Overall, this script loads and combines the training and test set data generatin
 If not already present, data are downloaded and unzipped into the working diretory, generating a new folder 'UCI HAR Dataset'.
 
 For each dataset (training and test sets) the following is carried out:
+
 1. Labels are loaded from *y_train.txt* or *y_test.txt*
 2. Data are loaded from *X_train.txt* or *X_test.txt* as data frames
 3. A descriptive list of features in the datasets is loaded from *features.txt* and assigned to the column names of each dataset (fromm step 2)
