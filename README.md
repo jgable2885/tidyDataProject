@@ -26,5 +26,6 @@ These two data frames are combined using the row bind command (`rbind()`). Using
 8. The *activity* and *subject* columns are moved to the leftmost positions of the data frame for ease of reading.
 9. Using `ddply()` means are taken by *subject* and *activity* using the `numcolwise(mean)` function from *plyr* as the `.fun` parameter and `.(activity, subject)` as the `.variables` parameter in `ddply()`.
 
-This final data frame constitutes a tidy data set: each variable (e.g. tBodyAcc-mean()-X)  is in one column and each different observation of that variable (e.g. the mean of a variable for subject 1 while walking) is in a different row.
+This final data frame constitutes a tidy data set: each variable (e.g. tBodyAcc-mean()-X)  is in one column and each different observation of that variable (e.g. the average of a variable for subject 1 while walking) is in a different row.
+
 
