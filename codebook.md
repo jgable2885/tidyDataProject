@@ -37,7 +37,7 @@ The corresponding mean and standard deviation values were estimated and included
 - *mean(): Mean value*
 - *std(): Standard deviation*
 
-run_analysis.R averages the means and standard deviations by activity and subject (e.g. the average tBodyAcc-X for subject 1 while walking, or the average tBodyAcc-Y for subject 5 while standing). **Names used in the original dataset are retained.**
+run_analysis.R averages the means and standard deviations by activity and subject (e.g. the average tBodyAcc-X for subject 1 while walking, or the average tBodyAcc-Y for subject 5 while standing). **Names and units used in the original dataset are retained.**
 
 
 
