@@ -19,9 +19,12 @@ For each dataset (training and test sets) the following is carried out:
 
 At the end of this process the script has produced two data frames containing the test set and training set data with new columns for activity labels and subjects.
 
-These two data frames are combined using the row bind command. Numbers in the *activity* column are replaced with descriptive names from the *activity_labels.txt* file. Grep is used to extract only those columns which have names containing "mean()" or "std()" in addition to the *activity* and *subject* columns (mean frequencies were omitted as they are not means of true measurements). The *activity* and *subject* columns are moved to the leftmost positions of the data frame for ease of reading.
+These two data frames are combined using the row bind command (`rbind()`). Using the combined data frame:
 
-Using `ddply()` means are taken by *subject* and *activity* using the `numcolwise(mean)` function from *plyr* as the `.fun` parameter in `ddply()`.
+6. Numbers in the *activity* column are replaced with descriptive names from the *activity_labels.txt* file
+7. Grep is used to extract only those columns which have names containing "mean()" or "std()" in addition to the *activity* and *subject* columns (mean frequencies were omitted as they are not means of true measurements). 
+8. The *activity* and *subject* columns are moved to the leftmost positions of the data frame for ease of reading.
+9. Using `ddply()` means are taken by *subject* and *activity* using the `numcolwise(mean)` function from *plyr* as the `.fun` parameter in `ddply()`.
 
 This final data frame constitutes a tidy data set: each variable (e.g. tBodyAcc-mean()-X)  is in one column and each different observation of that variable (e.g. the mean of a variable for subject 1 while walking) is in a different row.
 
