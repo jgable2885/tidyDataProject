@@ -7,7 +7,7 @@ Overall, this script loads and combines the training and test set data generatin
 **A codebook describing the feature list (column names) can be found at http://**
 
 ####Description of data processing:
-If not already present, data are downloaded and unzipped into the working diretory, generating a new folder `UCI HAR Dataset`.
+If not already present, data are downloaded and unzipped into the working diretory, generating a new folder "UCI HAR Dataset".
 
 For each dataset (training and test sets) the following is carried out:
 
@@ -21,7 +21,7 @@ At the end of this process the script has produced two data frames containing th
 
 These two data frames are combined using the row bind command. Numbers in the `Label` column are replaced with descriptive names from the *activity_labels.txt* file. Grep is used to extract only those columns which have names containing `mean()` or `std()` in addition to the *activity* and *subject* columns. The *activity* and *subject* columns are moved to the leftmost positions of the data frame for ease of reading.
 
-Using `ddply()` means are taken by "subject" and "activity" using the *numcolwise(mean)* function from *plyr* as the `.fun` parameter in `ddply()`.
+Using `ddply()` means are taken by *subject* and *activity* using the `numcolwise(mean)` function from *plyr* as the `.fun` parameter in `ddply()`.
 
 This final data frame constitutes a tidy data set: each variable (e.g. tBodyAcc-mean()-X)  is in one column and each different observation of that variable (e.g. the mean of a variable for subject 1 while walking) is in a different row.
 
