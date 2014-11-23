@@ -28,4 +28,5 @@ These two data frames are combined using the row bind command (`rbind()`). Using
 
 This final data frame constitutes a tidy data set: each variable (e.g. tBodyAcc-mean()-X)  is in one column and each different observation of that variable (e.g. the average of a variable for subject 1 while walking) is in a different row.
 
+The output from this script can be found at https://github.com/jgable2885/tidyDataProject/blob/master/averagesByActivityAndSubject.txt
 
