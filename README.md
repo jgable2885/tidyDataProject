@@ -10,11 +10,11 @@ Overall, this script loads and combines the training and test set data generatin
 If not already present, data are downloaded and unzipped into the working diretory, generating a new folder 'UCI HAR Dataset'.
 
 For each dataset (training and test sets) the following is carried out:
-1.Labels are loaded from *y_train.txt* or *y_test.txt*
-2.Data are loaded from *X_train.txt* or *X_test.txt* as data frames
-3.A descriptive list of features in the datasets is loaded from *features.txt* and assigned to the column names of each dataset (fromm step 2)
-4.A new column with activity label values (from step 1) is added to the dataset
-5.Subject lists are loaded from *subject_train.txt* and *subject_test.txt* and assigned to a new column in the data frame named 'subject'
+1. Labels are loaded from *y_train.txt* or *y_test.txt*
+2. Data are loaded from *X_train.txt* or *X_test.txt* as data frames
+3. A descriptive list of features in the datasets is loaded from *features.txt* and assigned to the column names of each dataset (fromm step 2)
+4. A new column with activity label values (from step 1) is added to the dataset
+5. Subject lists are loaded from *subject_train.txt* and *subject_test.txt* and assigned to a new column in the data frame named 'subject'
 
 At the end of this process the script has produced two data frames containing the test set and training set data with new columns for activity labels and subjects.
 
